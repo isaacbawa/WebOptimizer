@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center text-center">
+        <div class="col-md-10">
+            <h1 class="display-4 fw-bold text-primary">Accessibility Check</h1>
+            <p class="lead text-secondary">
+                Ensure your website is inclusive and usable for everyone, including users with disabilities.
+            </p>
+        </div>
+    </div>
+
+    <div class="row align-items-center mt-5">
+        <div class="col-md-6">
+            <h2 class="fw-bold text-secondary">Why Accessibility Matters?</h2>
+            <p class="text-muted">
+                Accessibility is not just a legal requirement but a cornerstone of user-centric design. According to the
+                World Health Organization (WHO), over 1 billion people worldwide live with some form of disability.
+            </p>
+            <p class="text-muted">
+                An accessible website ensures everyone can interact with your content effectively. By making your
+                website
+                inclusive, you can:
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="/static/images/accessibility-check.jpg" alt="Accessibility Check Illustration"
+                class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="/audit" class="btn btn-primary btn-lg px-4">Audit Your Website Now</a>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center fw-bold lead text-primary">Benefits of an Accessible Website</h2>
+        <div class="row text-center">
+            <div class="col-md-6 col-lg-3 lead">
+                <div class="card border-0 shadow h-100">
+                    <div class="card-body">
+                        <i class="bi bi-people-fill text-primary fs-1 mb-3"></i>
+                        <h5 class="card-title fw-bold">Enhanced User Experience</h5>
+                        <p class="card-text text-muted">Provide seamless interaction for all visitors, regardless of
+                            their abilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 lead">
+                <div class="card border-0 shadow h-100">
+                    <div class="card-body">
+                        <i class="bi bi-cash-coin text-success fs-1 mb-3"></i>
+                        <h5 class="card-title fw-bold">Tap Into New Audiences</h5>
+                        <p class="card-text text-muted">Access the $13 trillion spending power of disabled consumers
+                            globally.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 lead">
+                <div class="card border-0 shadow h-100">
+                    <div class="card-body">
+                        <i class="bi bi-exclamation-triangle-fill text-danger fs-1 mb-3"></i>
+                        <h5 class="card-title fw-bold">Avoid Costly Lawsuits</h5>
+                        <p class="card-text text-muted">Stay compliant with accessibility standards and reduce legal
+                            risks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 lead">
+                <div class="card border-0 shadow h-100">
+                    <div class="card-body">
+                        <i class="bi bi-award-fill text-warning fs-1 mb-3"></i>
+                        <h5 class="card-title fw-bold">Boost Your Reputation</h5>
+                        <p class="card-text text-muted">Demonstrate social responsibility and enhance your brand image.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row align-items-center mt-5">
+        <div class="col-md-6">
+            <h2 class="fw-bold text-secondary">Key Features of Our Accessibility Check</h2>
+            <ul class="list-unstyled">
+                <li class="mb-3">
+                    <h5 class="fw-bold text-primary">Compliance Audit</h5>
+                    <p class="text-muted">Evaluate your website against WCAG 2.1, ADA, and Section 508 standards.</p>
+                </li>
+                <li class="mb-3">
+                    <h5 class="fw-bold text-primary">Interactive Element Testing</h5>
+                    <p class="text-muted">Assess usability with screen readers and keyboard navigation.</p>
+                </li>
+                <li class="mb-3">
+                    <h5 class="fw-bold text-primary">Color Contrast Analysis</h5>
+                    <p class="text-muted">Identify and resolve color contrast issues to improve readability.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <img src="/static/images/accessibility-report-example.jpg" alt="Accessibility Report Example"
+                class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <h2 class="fw-bold text-primary">Create an Inclusive Digital Experience</h2>
+        <p class="text-muted">
+            Start your Accessibility Check today and make your website welcoming for all users.
+        </p>
+        <a href="/audit" class="btn btn-primary btn-lg px-4">Start Your Audit</a>
+    </div>
+</div>
+{% endblock %}

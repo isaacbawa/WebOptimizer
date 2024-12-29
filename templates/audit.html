@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}Audit a Website{% endblock %}
+
+{% block content %}
+<div class="container_inner">
+    <center>
+        <h1>Audit Your Website</h1>
+    </center>
+    <form class="audit-form" id="audit-form" action="/audit" method="post">
+        <label for="url">Enter a valid Website URL below</label>
+        <input type="url" id="url" name="url" placeholder="https://WebOptimizer.com" required>
+        <div class="button-container">
+            <button type="submit" class="btn btn-primary text-white py-2 px-4" id="audit-btn">Audit</button>
+            <a href="{{ report_url }}" class="download_btn" id="download-btn" role="button" aria-disabled="true"
+                style="pointer-events: none;">Download PDF Report</a>
+        </div>
+    </form>
+
+    {% if performance_metrics %}
+    <hr>
+    <h2>Audit Results</h2>
+    <div>
+        <h3>Performance</h3>
+        <p>Score: {{ performance_metrics.performance_score }}</p>
+    </div>
+    <div>
+        <h3>SEO</h3>
+        <p>Title: {{ seo_metrics.seo_title }}</p>
+        <p>Meta Description: {{ seo_metrics.seo_meta_description }}</p>
+    </div>
+    <div>
+        <h3>Accessibility</h3>
+        <p>Issues Found: {{ accessibility_metrics.accessibility_issues }}</p>
+    </div>
+    {% endif %}
+
+    <hr>
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>Step 1</h3>
+                <p>Enter your website's URL for a comprehensive audit in seconds.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2</h3>
+                <p>Get a detailed report with performance, SEO, and accessibility insights including areas for
+                    improvement.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3</h3>
+                <p>Follow our step-by-step recommendations to optimize your website.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonias -->
+    <section class="testimonias">
+        <h2>Hear from Our Happy Users</h2>
+    </section>
+</div>
+{% endblock %}

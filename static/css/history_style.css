@@ -1,0 +1,69 @@
+/* history page */
+:root {
+    --primary: #007BFF;
+}
+
+.history-container {
+    margin: 20px auto !important;
+    max-width: 1200px !important;
+    padding: 20px !important;
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.history-title {
+    text-align: center !important;
+    font-size: 2.5rem !important;
+    margin-bottom: 20px !important;
+    color: var(--primary) !important;
+}
+
+.table-wrapper {
+    overflow-x: auto !important;
+}
+
+.audit-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    text-align: left !important;
+    margin-bottom: 20px !important;
+}
+
+.audit-table thead {
+    background-color: var(--primary) !important;
+    color: #fff !important;
+}
+
+.audit-table th,
+.audit-table td {
+    padding: 12px 15px !important;
+    border: 1px solid #ddd !important;
+    word-wrap: break-word !important;
+}
+
+.audit-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9 !important;
+}
+
+.audit-table tbody tr:hover {
+    background-color: #f1f5ff !important;
+}
+
+.audit-table a {
+    color: var(--primary) !important;
+    text-decoration: none !important;
+}
+
+.audit-table a:hover {
+    text-decoration: underline !important;
+}
+
+.report-link {
+    font-weight: bold !important;
+    color: #28a745 !important;
+}
+
+.report-link:hover {
+    color: #218838 !important;
+}

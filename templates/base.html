@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}WebOptimizer{% endblock %}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ url_for('static', filename='img/Favicons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ url_for('static', filename='img/Favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="{{ url_for('static', filename='img/Favicons/favicon-16x16.png') }}">
+    <link rel="manifest" href=" {{ url_for('static', filename='img/Favicons/site.webmanifest') }}">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Rubik:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+        rel="stylesheet"> -->
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/audit_style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/history_style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/authentication_form_styles.css') }}" rel="stylesheet">
+
+    <!-- importing fontawesome kit -->
+    <script src="https://kit.fontawesome.com/667417c7ec.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid header position-relative overflow-hidden p-0">
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="/" class="navbar-brand p-0">
+                <h1 class="display-6 text-primary m-0"><i class="bi bi-speedometer2"></i>
+                    </i>WebOptimizer</h1>
+                <!-- <img src="static/img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="/" class="nav-item nav-link lead">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#service" class="nav-link dropdown-toggle lead" data-bs-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="/performance_audit" class="dropdown-item lead">Performance Audit</a>
+                            <a href="/seo_analysis" class="dropdown-item lead">SEO Audit</a>
+                            <a href="/accessibility_check" class="dropdown-item lead">Accessibility Audit</a>
+                        </div>
+                    </div>
+                    <a href="/pricing" class="nav-item nav-link lead">Pricing</a>
+                    <a href="/blog" class="nav-item nav-link lead">Blog</a>
+                </div>
+                <a href="/authentication_form"
+                    class="btn btn-light border border-primary rounded-pill text-primary py-2 px-4 me-4 lead">Log
+                    In</a>
+                <a href="/authentication_form" class="btn btn-primary rounded-pill text-white py-2 px-4 lead" lead>Sign
+                    Up</a>
+            </div>
+        </nav>
+
+        {% block content %}{% endblock %}
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="lead text-dark">WebOptimizer</h4>
+                            <a href="/metrics_glossary" class="lead">Metrics Glossary</a>
+                            <a href="/seo_analysis" class="lead">SEO</a>
+                            <a href="/accessibility_check" class="lead">Web Accessibility</a>
+                            <a href="/performance_audit" class="lead">Web Performance</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="lead text-dark">WebOptimizer</h4>
+                            <a href="/contact" class="lead"> Contact Us</a>
+                            <a href="/privacy_policy" class="lead"> Privacy Policy</a>
+                            <a href="/terms_conditions" class="lead"> Terms & Conditions</a>
+                            <a href="/blog" class="lead"> Our Blog & News</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="lead text-dark">Services</h4>
+                            <a href="/seo_analysis" class="lead"> SEO Analysis</a>
+                            <a href="/performance_audit" class="lead"> Performance Audit</a>
+                            <a href="/accessibility_check" class="lead"> Accessibility Check</a>
+                            <a href="/history" class="lead"> Your Audit History</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="lead text-dark">Contact Info</h4>
+                            <a href="" class="lead"><i class="fa fa-map-marker-alt me-2"></i> Plot 2, Bawa street,
+                                Accra, Ghana</a>
+                            <a href="" class="lead"><i class="fas fa-envelope me-2"></i> info@weboptimizer.com</a>
+                            <a href="" class="lead"><i class="fas fa-phone me-2"></i> +233543881593</a>
+                            <a href="" class="lead"><i class="fas fa-print me-2"></i> +233508489455</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1 lead" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1 lead" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1 lead" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1 lead" href=""><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white lead"><a href="/" class="text-primary lead"><i
+                                    class="fas fa-copyright text-primary me-2 lead"></i>
+                                WebOptimizer 2024</a>,
+                            All right reserved.</span>
+                    </div>
+                    <!-- <div class="col-md-6 text-center text-md-end text-white"> -->
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    <!-- Designed By <a class="border-bottom text-primary" href="https://htmlcodex.com">HTML Codex</a> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/authentication_form_styles.js"></script>
+
+        <!-- Bootstrap -->
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+        <script>
+            // Check if the download button should be active or not
+            document.addEventListener("DOMContentLoaded", function () {
+                const downloadButton = document.getElementById('download-btn');
+
+                // If the audit has been performed, make the button active
+                if (localStorage.getItem('auditCompleted') === 'true') {
+                    downloadButton.style.pointerEvents = 'auto';
+                    downloadButton.setAttribute('aria-disabled', 'false');
+                }
+            });
+
+            // When the Audit button is clicked, make the download button active and store the state
+            document.querySelector('button[type="submit"]').addEventListener('click', function () {
+                const downloadButton = document.getElementById('download-btn');
+                downloadButton.style.pointerEvents = 'auto'; // Enable clicking
+                downloadButton.setAttribute('aria-disabled', 'false'); // Make it active
+                localStorage.setItem('auditCompleted', 'true'); // Store the state to keep the button active
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

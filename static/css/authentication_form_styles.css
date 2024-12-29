@@ -1,0 +1,138 @@
+ .reg-log-form-container {
+     background-color: white !important;
+     width: 380px !important;
+     margin: auto !important;
+     height: 500px !important;
+     border-radius: 25px !important;
+     box-shadow: 0 0 10px black !important;
+ }
+
+ .reg-log-form-container #account {
+     position: relative !important;
+     font-size: 90px !important;
+     color: #e1cfcf !important;
+     padding: 19px !important;
+     background: rgb(99, 140, 187) !important;
+     background: radial-gradient(circle, rgb(10, 51, 98) 54%, rgba(10, 3, 60, 0.97) 100%) !important;
+     border-radius: 10px !important;
+     border-bottom-left-radius: 100px !important;
+     border-bottom-right-radius: 100px !important;
+     top: -60px !important;
+     left: calc(50% - 74px) !important;
+     box-shadow: 0 0 5px black !important;
+ }
+
+ .reg-log-form-container .reg-log-tabs .tabs {
+     display: flex !important;
+     position: relative !important;
+     top: -25px !important;
+     justify-content: center !important;
+     color: rgb(73, 71, 71) !important;
+     height: 25px !important;
+ }
+
+ .reg-log-form-container .reg-log-tabs .reg-tab,
+ .login-tab {
+     width: 50% !important;
+     text-align: center !important;
+     padding-bottom: 10px !important;
+     margin: auto 25px !important;
+     cursor: pointer !important;
+ }
+
+ .reg-log-form-container .reg-log-tabs .reg-tab:hover,
+ .login-tab:hover {
+     color: rgb(10, 51, 98) !important;
+     border-bottom: 4px solid rgb(10, 51, 98) !important;
+ }
+
+ .reg-log-form-container .active {
+     color: rgb(10, 51, 98) !important;
+     border-bottom: 4px solid rgb(10, 51, 98) !important;
+ }
+
+ .reg-log-form-container .reg-log-form-container {
+     display: block !important;
+     padding-top: 25px !important;
+ }
+
+ .reg-log-form-container .reg-log-form-container .reg_log_form {
+     width: 90% !important;
+     display: flex !important;
+     flex-direction: column !important;
+     margin: 15px auto !important;
+ }
+
+ .reg-log-form-container input {
+     height: 27px !important;
+     margin: 5px !important;
+     border-radius: 15px !important;
+     border: none !important;
+     outline: none !important;
+     background-color: rgb(209, 209, 209) !important;
+     padding: 5px !important;
+     font-size: 17px !important;
+     color: rgb(73, 73, 73) !important;
+     text-align: center !important;
+ }
+
+ .reg-log-form-container p {
+     margin: 0 !important;
+     padding: 0 !important;
+ }
+
+ .reg-log-form-container .options {
+     display: flex !important;
+     align-items: center !important;
+     margin-top: 25px !important;
+     font-style: italic !important;
+ }
+
+ .reg-log-form-container .remember {
+     display: flex !important;
+     align-items: center !important;
+     width: 50% !important;
+     text-align: center !important;
+ }
+
+ .reg-log-form-container button {
+     margin: 20px auto !important;
+     font-size: 20px !important;
+     background-color: rgb(10, 51, 98);
+     color: white !important;
+     padding: 10px 45px !important;
+     border-radius: 18px !important;
+     box-shadow: 0 0 2px rgb(117, 113, 113) !important;
+     border: none !important;
+     cursor: pointer !important;
+ }
+
+ .reg-log-form-container button:hover {
+     background-color: rgba(0, 81, 255, 0.781) !important;
+ }
+
+ .reg-log-form-container #registration-form {
+     display: none !important;
+ }
+
+ .reg-log-form-container .tnc {
+     display: flex !important;
+     align-items: center !important;
+     margin: auto !important;
+     color: rgb(54, 52, 52) !important;
+     font-style: italic !important;
+ }
+
+ /* making design responsive */
+
+ @media screen and (max-width:600px) {
+     .reg-log-form-container {
+         width: 90% !important;
+     }
+ }
+
+ @media screen and (max-width:350px) {
+     .reg-log-form-container {
+         width: 320px !important;
+     }
+ }

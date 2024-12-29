@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-primary text-center">Understanding Your Metrics</h1>
+    <p class="lead text-center">Learn about the key metrics we measure to enhance your website's performance, SEO, and
+        accessibility.</p>
+
+    <section class="mt-5">
+        <h2 class="text-primary">Performance Metrics</h2>
+        <div class="mt-4">
+            <h3 class="lead font-weight-bold">Performance Score</h3>
+            <p class="lead">This is an overall rating of a website's speed and responsiveness. A score of "0" indicates
+                extremely poor performance, where users may experience slow load times or unresponsive elements. For
+                instance, if a website takes more than 10 seconds to load, users are likely to abandon it, affecting
+                conversions and engagement.</p>
+        </div>
+        <div class="mt-4">
+            <h3 class="lead font-weight-bold">First Contentful Paint (FCP)</h3>
+            <p class="lead">Measures the time it takes for the first visible content (text or image) to appear on the
+                screen after a user requests the page. A faster FCP enhances user experience by showing that the page is
+                loading. For example, users visiting an e-commerce site expect to see product images load almost
+                instantly.</p>
+        </div>
+        <div class="mt-4">
+            <h3 class="lead font-weight-bold">Speed Index</h3>
+            <p class="lead">Indicates how quickly the content of a page is visibly populated during loading. A lower
+                Speed Index represents a better user experience. For example, a news website with text and images that
+                load within 2-3 seconds will have a good Speed Index.</p>
+        </div>
+        <div class="mt-4">
+            <h3 class="lead font-weight-bold">Largest Contentful Paint (LCP)</h3>
+            <p class="lead">Tracks the time taken to load the largest visible element, such as a main image or header
+                text. An optimal LCP is under 2.5 seconds, ensuring that key content is accessible quickly. For example,
+                an online store’s banner image should load fast for shoppers.</p>
+        </div>
+        <div class="mt-4">
+            <h3 class="lead font-weight-bold">Time to Interactive (TTI)</h3>
+            <p class="lead">Measures the time it takes for a page to become fully interactive, allowing users to click,
+                scroll, or input data without delay. A slow TTI frustrates users, such as when a "Buy Now" button on an
+                e-commerce site remains unclickable for several seconds.</p>
+        </div>
+        <div class="mt-4">
+            <h3 class="lead font-weight-bold">Total Blocking Time (TBT)</h3>
+            <p class="lead">Represents the amount of time that the main thread of the browser is blocked, preventing
+                interaction with the website. Reducing TBT is essential for smoother experiences, such as ensuring form
+                submissions on a website don’t freeze temporarily.</p>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <h2 class="text-primary">SEO Metrics</h2>
+        <div class="mt-4">
+            <h3 class="lead font-weight-bold">SEO Title</h3>
+            <p class="lead">The title tag of a webpage that appears in search engine results. It should be concise and
+                include relevant keywords to attract clicks. For example, an SEO title for a bakery could be "Freshly
+                Baked Goods - Order Online Today."</p>
+        </div>
+        <div class="mt-4">
+            <h3 class="lead font-weight-bold">SEO Meta Description</h3>
+            <p class="lead">A brief summary of a webpage’s content shown below the title in search engine results. A
+                well-crafted meta description improves click-through rates. For example, "Discover our wide range of
+                organic and gluten-free bread, delivered to your doorstep."</p>
+        </div>
+        <div class="mt-4">
+            <h3 class="lead font-weight-bold">H1 Tags</h3>
+            <p class="lead">These are the main headings on a webpage and should be clear, descriptive, and optimized for
+                keywords. They guide users and search engines about the content of the page. For example, an H1 tag on a
+                tech blog might be "Top 10 Smartphones of 2024."</p>
+        </div>
+        <div class="mt-4">
+            <h3 class="lead font-weight-bold">H2 Tags</h3>
+            <p class="lead">Secondary headings that structure the content into sections, improving readability and SEO.
+                For example, "Features of the Latest iPhone" under an H1 tag about smartphones.</p>
+        </div>
+        <div class="mt-4">
+            <h3 class="lead font-weight-bold">Canonical URL</h3>
+            <p class="lead">Specifies the preferred version of a webpage, preventing duplicate content issues that could
+                harm search rankings. For instance, https://example.com could be the canonical URL over
+                https://example.com/index.html.</p>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <h2 class="text-primary">Accessibility Metrics</h2>
+        <div class="mt-4">
+            <h3 class="lead font-weight-bold">Missing ARIA Roles</h3>
+            <p class="lead">ARIA (Accessible Rich Internet Applications) roles help screen readers and other assistive
+                technologies understand a webpage’s structure. Missing roles can hinder navigation for visually impaired
+                users, such as failing to label a button as "Submit."</p>
+        </div>
+        <div class="mt-4">
+            <h3 class="lead font-weight-bold">Header Issues</h3>
+            <p class="lead">Refers to problems in the structure or hierarchy of headers (H1, H2, etc.), which can
+                confuse assistive technologies and users. For example, skipping from H1 to H3 without an H2 can disrupt
+                the logical flow.</p>
+        </div>
+        <div class="mt-4">
+            <h3 class="lead font-weight-bold">Missing Alt Attributes</h3>
+            <p class="lead">Alt attributes provide text descriptions for images, crucial for visually impaired users
+                relying on screen readers. For example, an image of a cake should have an alt attribute like "Chocolate
+                cake with strawberries."</p>
+        </div>
+        <div class="mt-4">
+            <h3 class="lead font-weight-bold">Accessibility Issues</h3>
+            <p class="lead">Broadly encompasses problems like low contrast between text and background, improper use of
+                ARIA roles, or missing keyboard navigation options. For example, a form that can’t be filled out using a
+                keyboard excludes users with motor disabilities.</p>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <div class="row mt-5">
+        <div class="col-md-12 text-center">
+            <a href="/audit" class="btn btn-primary btn-lg">Audit Your Website</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
